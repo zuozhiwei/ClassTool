@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>classedu</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<!-- 登录-学生 -->
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>classedu.controller.Login</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/Login</url-pattern>
+	</servlet-mapping>
+
+	<!-- 签到-学生 -->
+	<servlet>
+		<servlet-name>Signin</servlet-name>
+		<servlet-class>classedu.controller.Signin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Signin</servlet-name>
+		<url-pattern>/Signin</url-pattern>
+	</servlet-mapping>
+
+	<!-- 获取问题-学生 -->
+	<servlet>
+		<servlet-name>GetQuestion</servlet-name>
+		<servlet-class>classedu.controller.GetQuestion</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetQuestion</servlet-name>
+		<url-pattern>/GetQuestion</url-pattern>
+	</servlet-mapping>
+
+	<!-- 获取问题列表-教师 -->
+	<servlet>
+		<servlet-name>GetQuestionList</servlet-name>
+		<servlet-class>classedu.controller.GetQuestionList</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetQuestionList</servlet-name>
+		<url-pattern>/GetQuestionList</url-pattern>
+	</servlet-mapping>
+
+	<!-- 留言-学生 -->
+	<servlet>
+		<servlet-name>SetMessage</servlet-name>
+		<servlet-class>classedu.controller.SetMessage</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SetMessage</servlet-name>
+		<url-pattern>/SetMessage</url-pattern>
+	</servlet-mapping>
+
+	<!-- 获取签到信息-教师 -->
+	<servlet>
+		<servlet-name>GetSignin</servlet-name>
+		<servlet-class>classedu.controller.GetSignin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetSignin</servlet-name>
+		<url-pattern>/getSignin</url-pattern>
+	</servlet-mapping>
+
+	<!-- 选择课程-教师 -->
+	<servlet>
+		<servlet-name>selectCourse</servlet-name>
+		<servlet-class>classedu.controller.SelectCourse</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>selectCourse</servlet-name>
+		<url-pattern>/selectCourse</url-pattern>
+	</servlet-mapping>
+
+	<!-- 选择题目-教师 -->
+	<servlet>
+		<servlet-name>setQuestionNo</servlet-name>
+		<servlet-class>classedu.controller.SetQuestionNo</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>setQuestionNo</servlet-name>
+		<url-pattern>/setQuestionNo</url-pattern>
+	</servlet-mapping>
+
+	<!-- 获取留言-教师 -->
+	<servlet>
+		<servlet-name>getMessageList</servlet-name>
+		<servlet-class>classedu.controller.GetMessageList</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>getMessageList</servlet-name>
+		<url-pattern>/getMessageList</url-pattern>
+	</servlet-mapping>
+
+	<!-- 添加题目-教师 -->
+	<servlet>
+		<servlet-name>addQuestion</servlet-name>
+		<servlet-class>classedu.controller.AddQuestion</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addQuestion</servlet-name>
+		<url-pattern>/addQuestion</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 登录-教师 -->
+	<servlet>
+		<servlet-name>teacherLogin</servlet-name>
+		<servlet-class>classedu.controller.TeacherLogin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>teacherLogin</servlet-name>
+		<url-pattern>/teacherLogin</url-pattern>
+	</servlet-mapping>
+</web-app>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">课堂互动</string>
+    <drawable name="clr_normal">#bfbfbf</drawable>
+    <drawable name="clr_pressed">#404040</drawable>
+</resources>
